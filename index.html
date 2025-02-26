@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I'm Feeling Lucky</title>
+    <style>
+        h1{
+            color: rgb(159, 159, 159);
+            font-size: 50pt;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
+      
+    </style>
+    <script>
+
+      document.addEventListener("DOMContentLoaded", () => {
+            let signs = ["https://www.google.com/search?q=what+to+do+if+you%27re+josh+o%27connor&sca_esv=c5b56fe4199778fb&hl=en&authuser=0&biw=1050&bih=641&udm=2&sxsrf=AHTn8zowy76awY-z4Pzhx0XonL9C_nuLLg%3A1740524883267&ei=U02-Z_uCEO-r0PEPqPTAmAM&ved=0ahUKEwi7-I67-N-LAxXvFTQIHSg6EDMQ4dUDCBE&uact=5&oq=what+to+do+if+you%27re+josh+o%27connor&gs_lp=EgNpbWciIndoYXQgdG8gZG8gaWYgeW91J3JlIGpvc2ggbydjb25ub3JIykVQuAZYzkRwCXgAkAEAmAGWAaABrBeqAQQzOC4yuAEDyAEA-AEBmAIkoALbEcICBxAjGCcYyQLCAgoQABiABBhDGIoFwgIGEAAYBxgewgIIEAAYBxgKGB7CAgUQABiABMICCBAAGIAEGLEDwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIoFwgIHEAAYgAQYCsICBBAAGB7CAgYQABgIGB6YAwCIBgGSBwQzNC4yoAf8uQE&sclient=img",
+            "https://www.are.na/share/uftBEEk",
+            "https://www.youtube.com/shorts/8XqVqUPBO8U", "https://www.youtube.com/shorts/yEuhQYcPIQM", "https://www.youtube.com/shorts/5AyYBQohqvY", "https://www.instagram.com/reel/C9ApkJeCP2g/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==", "https://www.instagram.com/p/Cu2aKxSsaSd/", "https://open.spotify.com/album/2H9tah8RZL9hc3TQ3ffpJh?si=ZED1DnRrTMmLb2eER-Fpzg", "https://open.spotify.com/album/0ntm3YaiXVkkGitWl2XASV?si=NSVa32DeQWOjUOBcFt5WFA", "https://facetime.apple.com/join#v=1&p=Esfud/PZEe+KPFpn2p5Izg&k=y5817SPPgGwZK9bVkPphmcF8iVaxCNnjZC4xzRIwVN4"
+            ]
+             let texts = ["WHAT TO DO IF YOU'RE HORNY", "WHAT TO DO IF YOU NEED CLOTHES", "WHAT TO DO IF SIBYL BITES YOU", "WHAT TO DO IF YOU'RE HUNGRY", "WHAT TO DO IF YOU'RE HUNGRY", "WHAT TO DO IF YOU'RE HUNGRY", "WHAT TO DO IF YOU'RE HUNGRY", "WHAT TO DO IF YOU PLAY TOO MUCH DARK SOULS", "WHAT TO DO IF YOU NEED TO DANCE", "WHAT TO DO IF YOU ARE LONELY"]
+            var choose = Math.floor(signs.length * Math.random());
+            var text = document.getElementById("text");
+            text.innerHTML = texts[choose];
+            
+            console.log(signs[choose]);
+            setTimeout(() => {
+        window.location.replace(signs[choose]);
+    }, 1500);
+            
+        })
+    
+    </script>
+  </head>
+  <body>
+    <main>
+       <h1><button> <div id="text">I'M FEELING LUCKY</div></button></h1>
+    </main>
+  </body>
+</html>
